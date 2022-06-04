@@ -39,11 +39,13 @@ img {
 .main {
     margin: 0 auto;
     border-radius: 15px;
-    background-color: #14253d;
-    color: #2f415b;
+    background-color: hwb(215 8% 76%);
     padding: 1.4em;
     width: 90%;
     max-width: 20em;
+    box-shadow: 0 1.4em .45em 1em #0f1728,
+                0 1em .5em 2.8em #0f182a;
+    /* 0f182a   */
 }
 
 .nft-wrapper {
