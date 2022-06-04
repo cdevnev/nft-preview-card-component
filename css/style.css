@@ -73,6 +73,7 @@ img {
     background-color: #00fff7;
     border-radius: 10px;
     opacity: 0;
+    transition: .3s ease-in-out;
 }
 
 .overlay-icon {
@@ -83,6 +84,7 @@ img {
     -ms-transform: translate(-50%, -50%);
     height: auto;
     opacity: 0;
+    transition: .3s ease-in-out;
 }
 
 .main-header {
@@ -98,11 +100,9 @@ img {
 
 .nft-wrapper:hover .nft-overlay {
     opacity: .5;
-    transition: .3s ease-in-out;
 }
 
 .nft-wrapper:hover .overlay-icon {
-    transition: .3s ease-in-out;
     opacity: 1;
 }
 
