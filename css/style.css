@@ -46,12 +46,43 @@ img {
     max-width: 20em;
 }
 
+.nft-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 20em;
+}
+
 .nft-image {
     border-radius: 10px;
     margin: 0 auto;
     object-fit: scale-down;
+    width: 100%;
     height: auto;
     margin-bottom: 1.4em;
+}
+
+.nft-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: #00fff7;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: auto;
+    opacity: 0;
 }
 
 .main-header {
@@ -59,6 +90,24 @@ img {
     font-weight: 600;
     margin-bottom: .625em;
     font-size: 1.35em;
+    display: inline-block;
+}
+
+/* Presumably, these hovers would be links,  */
+/* but it was not specified in the challenge so I've just used their class */
+
+.nft-wrapper:hover .nft-overlay {
+    opacity: .5;
+    transition: .3s ease-in-out;
+}
+
+.nft-wrapper:hover .overlay-icon {
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.main-header:hover, .author:hover {
+    color: #00fff7;
 }
 
 .section-content, .timer, .attribution {
@@ -72,7 +121,6 @@ img {
     color: #00fff7;
     font-weight: 400;
     font-size: .925rem;
-
 }
 
 .info-container {
@@ -124,15 +172,19 @@ hr {
     color: #fff;
 }
 
+/* Responsive section -- adjusts fonts and card max-width _very_ slightly at just one breakpoint  */
 @media only screen and (min-width: 378px) {
-    .container {
-        font-size: 1.5rem;
+    .main {
+        width: 85%;
+        max-width: 22em;
     }
-    .price {
-        font-size: 1.2rem;
+    .price, .timer {
+        /* font-size: 1rem; */
     }
     .main-header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    
+    .section-content, .attribution {
+        font-size: 1.1rem;
+    }
 }
