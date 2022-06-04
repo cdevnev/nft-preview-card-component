@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +31,7 @@ img {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
+    font-family: 'Outfit', sans-serif;
 }
 
 .main {
@@ -35,8 +39,8 @@ img {
     border-radius: 15px;
     background-color: aquamarine;
     padding: 1em;
-    width: 80%;
-    max-width: 20em;
+    width: 90%;
+    max-width: 25em;
 }
 
 .nft-image {
@@ -50,10 +54,19 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .eth-cont, .clock-cont {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.avatar {
+
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 100%;
 }
