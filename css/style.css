@@ -9,6 +9,8 @@
 
 html {
     height: 100%;
+    font-size: 100%;  /* 16px */
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -32,9 +34,6 @@ img {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
 }
 
 .main {
@@ -42,7 +41,7 @@ img {
     border-radius: 15px;
     background-color: #14253d;
     color: #2f415b;
-    padding: 1.5em;
+    padding: 1.4em;
     width: 90%;
     max-width: 20em;
 }
@@ -58,19 +57,21 @@ img {
 .main-header {
     color: #fff;
     font-weight: 600;
-    margin-bottom: .5em;
-    font-size: 1.6rem;
+    margin-bottom: .625em;
+    font-size: 1.35em;
 }
 
 .section-content, .timer, .attribution {
     color: #8bacda;
     margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .price {
     color: #00fff7;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: .925rem;
 
 }
 
@@ -97,7 +98,7 @@ img {
 
 hr {
     color: #2f415b;
-    margin: 1em auto;
+    margin: .8em auto;
 }
 
 .avatar {
@@ -123,8 +124,15 @@ hr {
     color: #fff;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 378px) {
     .container {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
+    .price {
+        font-size: 1.2rem;
+    }
+    .main-header {
+        font-size: 2rem;
+    }
+    
 }
